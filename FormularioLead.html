@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="FormularioLead.css">
+    <title>Formulário | Lead</title>    
+</head>
+<body>
+    <div class="box">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+            <input type=hidden name="oid" value="00D8b0000013gUs">
+            <input type=hidden name="retURL" value="http://google.com.br">
+            
+            <fieldset>
+                <legend><b>Criação de Lead</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="first_name" id="first_name" class="inputUser" required>
+                    <label for="first_name" class="labelInput">Primeiro Nome</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text"  class="inputUser"required>
+                    <label for="last_name" class="labelInput">Sobrenome</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input  id="phone" maxlength="40" name="phone" size="20" type="text" class="inputUser"required/>
+                    <label for="phone" class="labelInput">Telefone</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input  id="email" maxlength="80" name="email" size="20" type="text" class="inputUser"required/>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input  id="state" maxlength="20" name="state" size="20" type="text" class="inputUser"required />
+                    <label for="state"class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputBox" margin="10px">
+                    <input  id="city" maxlength="40" name="city" size="20" type="text" class="inputUser"required />
+                    <label for="city"class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input  id="00N8b000007ZtI8" maxlength="18" name="00N8b000007ZtI8" size="20" type="text"  class="inputUser"required />
+                    <label class="labelInput">CNPJ</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input  id="00N8b0000081kuK" maxlength="255" name="00N8b0000081kuK" size="20" type="text"  class="inputUser"required/>
+                    <label class="labelInput">Motivo</label>
+                </div>
+
+                <br><br>
+                <input class="enviar" type="submit" name="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
